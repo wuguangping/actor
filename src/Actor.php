@@ -8,6 +8,7 @@ use EasySwoole\Component\Process\Socket\TcpProcessConfig;
 use EasySwoole\Component\Process\Socket\UnixProcessConfig;
 use EasySwoole\Component\Singleton;
 use EasySwoole\Trigger\TriggerInterface;
+use Swoole\Server;
 
 class Actor
 {
@@ -132,7 +133,7 @@ class Actor
         }
     }
 
-    public function attachServer(\swoole_server $server)
+    public function attachServer(Server $server)
     {
         $list = $this->generateProcess();
         foreach ($list['proxy'] as  $proxy){
