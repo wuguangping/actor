@@ -1,5 +1,5 @@
 {
-    "name": "easyswoole/actor",
+    "name": "wuguangping/actor",
     "type": "library",
     "description": "easyswoole component",
     "keywords" : ["swoole", "framework", "async","easyswoole"],
@@ -12,10 +12,10 @@
         }
     ],
     "require": {
-        "php": ">=7.1.0",
-        "ext-swoole":"^4.4.0",
-        "easyswoole/component": ">=1.0",
-        "easyswoole/spl": "^1.1",
+        "php": "^8.0",
+        "ext-swoole": ">=4.4.4",
+        "easyswoole/component": "^2.0",
+        "easyswoole/spl": "^2.0",
         "easyswoole/utility": "^1.0",
         "easyswoole/trigger": "^1.0"
     },
